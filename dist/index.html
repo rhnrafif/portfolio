@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" id="html" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +7,47 @@
     <title>Raihanudin Rafif</title>
     <link rel="stylesheet" href="/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/path/to/ideal-image-slider.css">
 </head>
-<body class="font-root font-light">
+<body class="font-root font-light dark:bg-dark">
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">                    
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-third">                    
         <div class="container max-w-[1080px]">
             <div class="flex items-center justify-between relative">
                 <div class="px-4 py-2">
                    <img class="w-10 lg:w-11 select-none" src="/assets/nft.aea1d058.png" alt="logo">
                 </div>
+
+                <!-- button dark mode start -->
+                <button id="btn_dark" class="w-8 h-8 flex justify-center items-center relative font-medium dark:text-dark "> <span class="text-sm mb-1 mr-2 px-1 rounded outline outline-dark dark:bg-dark dark:text-third group"> Mode </span>
+                    <img id="sun" src="/assets/sun2.6b0fa444.svg"
+                        class="w-7 h-7 absolute top-0 left-11 scale-100 transition duration-500 ease-in-out">
+                    <img id="moon" src="/assets/moon.c4623172.svg"
+                        class="w-7 h-7 absolute top-0 left-11 scale-0 transition duration-500 ease-in-out">
+                </button>
+                <!-- button dark mode end -->
+                
+
                 <div class="flex items-center px-4">
+                    
                     <button id="hamburger" class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute mt-1 py-5 bg-white outline outline-[0.5px] outline-gray-400 lg:outline-none dark:outline-none dark:bg-third shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none  ">
                         <ul class="block lg:flex" >
                             <li class="group">
-                                <a href="#home" class="text-base font-medium  text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#home" class="text-base font-medium  text-dark py-2 mx-8 flex group-hover:text-primary dark:group-hover:text-primary">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                                <a href="#about" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary dark:group-hover:text-primary">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                <a href="#portfolio" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary dark:group-hover:text-primary">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
+                                <a href="#contact" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary dark:group-hover:text-primary">Kontak</a>
                             </li>
                         </ul>
                     </nav>
@@ -49,21 +62,21 @@
         <div class="container max-w-[1080px]">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-normal text-primary md:text-xl">Hallo, perkenalkan saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"> Raihanudin Rafif</span> </h1>
-                    <h2 class="font-medium text-secondary text-lg mb-5  mt-1 lg:text-2xl">Student & <span class="text-dark"> Freelancer</span></h2>
-                    <p class="font-normal text-base text-justify text-secondary mb-10 leading-relaxed">
+                    <h1 class="text-base font-normal text-primary md:text-xl">Hallo, perkenalkan saya <span class="block font-medium text-dark dark:text-third text-4xl mt-1 lg:text-5xl"> Raihanudin Rafif</span> </h1>
+                    <h2 class="font-medium text-secondary dark:text-third text-lg mb-5  mt-1 lg:text-2xl">Student & <span class="text-dark dark:text-primary"> Freelancer</span></h2>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third mb-10 leading-relaxed">
                         Saya adalah mahasiswa jurusan Sistem Informasi. Juga seorang Bootcamp 'hunter' karena Dunia IT dan perkembangannya selalu menjadi hal menarik bagi saya. Saat ini sedang mendalami skill programming khususnya Fullstack Web Development.
                     </p>
                 
-                    <a href="#portfolio" class="text-base font-medium text-white bg-primary py-2 px-5
+                    <a href="#portfolio" class="text-base font-medium text-white dark:text-dark dark:hover:text-third dark:bg-third dark:hover:bg-primary bg-primary py-2 px-5
                     rounded-2xl hover:shadow-lg hover:bg-secondary transition duration-300 ease-in-out">Apa yang sudah saya kerjakan ?</a>
                 </div>
                 <div class="w-full self-end mt-20 px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-0 lg:right-0">
                         <img src="/assets/hero.fd5b37f6.png" alt="hero" class="max-w-[200px] mx-auto select-none">
                         <span class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
-                            <svg width="250" height="250" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#00A7EB"
+                            <svg width="250" height="250" class="fill-[#00A7EB] dark:fill-third" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill=""
                                     d="M48.3,-41.4C63.9,-32.6,79,-16.3,80.1,1.2C81.3,18.6,68.5,37.2,52.9,49.8C37.2,62.4,18.6,69,-0.2,69.2C-18.9,69.3,-37.8,63,-45.7,50.4C-53.6,37.8,-50.4,18.9,-52.2,-1.8C-54,-22.4,-60.7,-44.9,-52.8,-53.7C-44.9,-62.5,-22.4,-57.6,-3.1,-54.5C16.3,-51.4,32.6,-50.2,48.3,-41.4Z"
                                     transform="translate(100 100) scale(1.1)" />
                             </svg>
@@ -73,7 +86,6 @@
             </div>
         </div>
     </section>
-
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
@@ -82,17 +94,17 @@
             <div class=" flex flex-wrap">
                 <div class="w-full px-5 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-medium text-dark text-2xl max-w-md lg:text-3xl">Siapa saya sebenarnya ?</h2>
-                    <p class="font-normal text-base text-justify text-secondary max-w-xl lg:text-base py-3">Saya berasal dari Tangerang, Indonesia. Seorang lulusan SMA IPA yang identik dengan Sains dan Teknologi namun lebih memilih Teknologi sebagai bidang dalam lanjutan pendidikan ditingkat sarjana, ya. Saat ini saya berkuliah di Universitas Terbuka program studi Informasi.</p>
-                    <p class="font-normal text-base text-justify text-secondary max-w-xl lg:text-base ">Saya mengawali hobi dibidang Desain Grafis sejak tahun 2018. Mulai tertarik dan mendalami secara intensif dunia pemrograman sejak Januari 2022 melalui sebuah komunitas Fullstack Programmer aktif hingga saat ini. Saya sangat terbuka untuk kesempatan apapun khususnya dalam IT Development. </p>
+                    <h2 class="font-medium text-dark dark:text-third text-2xl max-w-md lg:text-3xl">Siapa saya sebenarnya ?</h2>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third max-w-xl lg:text-base py-3">Saya berasal dari Tangerang, Indonesia. Seorang lulusan SMA IPA yang identik dengan Sains dan Teknologi namun lebih memilih Teknologi sebagai bidang dalam lanjutan pendidikan ditingkat sarjana, ya. Saat ini saya berkuliah di Universitas Terbuka program studi Informasi.</p>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third max-w-xl lg:text-base ">Saya mengawali hobi dibidang Desain Grafis sejak tahun 2018. Mulai tertarik dan mendalami secara intensif dunia pemrograman sejak Januari 2022 melalui sebuah komunitas Fullstack Programmer aktif hingga saat ini. Saya sangat terbuka untuk kesempatan apapun khususnya dalam IT Development. </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3 class="font-medium text-dark text-2xl mb-3 lg:text-3xl lg:pt-10">Mari berteman</h3>
-                    <p class="font-normal text-base text-secondary mb-4 lg:text-base">Saya orang yang terbuka, senang berdiskusi dan berorganisasi. Terlebih saya juga ikut dalam organisasi dan komunitas baik dibidang IT atau Sosial Nonprofit. <span class="block mt-2 text-dark font-medium"> Yuk kenal lebih jauh dengan saya</span></p>
+                    <p class="font-normal text-base text-secondary dark:text-third mb-4 lg:text-base">Saya orang yang terbuka, senang berdiskusi dan berorganisasi. Terlebih saya juga ikut dalam organisasi dan komunitas baik dibidang IT atau Sosial Nonprofit. <span class="block mt-2 text-dark font-medium"> Yuk kenal lebih jauh dengan saya</span></p>
                     
                     <div class="flex items-center">
                         <!-- LinkedIN -->
-                        <a target="_blank" href="https://wa.me/628989011101" class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"> 
+                        <a target="_blank" href="https://wa.me/628989011101" class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white dark:text-third dark:hover:text-dark"> 
                             <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                 <title>WhatsApp</title>
                                 <path
@@ -102,7 +114,7 @@
 
                         <!-- Instagram -->
                         <a target="_blank" href="https://instagram.com/rhnrafif"
-                            class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white">
+                            class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white dark:text-third dark:hover:text-dark">
                             <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                 <title>Instagram</title>
                                 <path
@@ -112,7 +124,7 @@
 
                         <!-- Telegram -->
                         <a target="_blank" href="https://t.me/rhnrafif14"
-                            class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white">
+                            class="w-9 h-9 mr-3 rounded-2xl flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white dark:text-third dark:hover:text-dark">
                             <svg role="img" viewBox="0 0 24 24" width="20" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                                 <title>Telegram</title>
                                 <path
@@ -129,31 +141,38 @@
     <!-- About Section End -->
 
     <!-- Portfolio Start -->
-    <section id="portfolio" class="pt-24 pb-16 bg-secondary bg-opacity-20">
+    <section id="portfolio" class="pt-24 pb-16 bg-secondary dark:bg-dark bg-opacity-20">
         <div class="container max-w-[1080px]">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-xl uppercase text-primary mb-2">Portfolio</h4>
-                    <p class="font-normal text-lg text-secondary">Berikut adalah project yang pernah saya kerjakan baik Desain Grafis, UI/UX, Web Development, dan yang lainnya.</p>
+                    <p class="font-normal text-lg text-secondary dark:text-third">Berikut adalah project yang pernah saya kerjakan baik Desain Grafis, UI/UX, Web Development, dan yang lainnya.</p>
                 </div>
             </div>
             <div class="w-full px-4 flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
                 <!-- project 1 start -->
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img class="" src="/assets/1.826b5c78.jpg" alt="">
+                    <div class="relative rounded-md shadow-md overflow-hidden flex flex-wrap justify-start w-full max-h-[260px] ">
+                        <a href="https://www.behance.net/gallery/149410887/Mayur-Mobile-App-Design-UI-UX" target="_blank">
+                            <img id="p1a" class="" src="/assets/1.826b5c78.jpg" alt="">
+                        </a>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Mayur Mobile App Design</h3>
-                    <p class="font-normal text-base text-secondary">
+                    <h3 class="font-semibold text-xl text-dark dark:text-primary mt-5 mb-3">Mayur Mobile App Design</h3>
+                    <p class="font-normal text-base text-secondary dark:text-third">
                         Mendesain sebuah Prototipe App Mobile E-Commerce dengan mengimplementasikan konsep design thinking. <br>
-                        Sebagai tugas UI/UX <a href="https://jvalleybootcamp.com/" target="_blank" class="font-medium hover:font-semibold hover:text-primary"> J Valley Bootcamp </a> tahun 2022
+                        Sebagai tugas UI/UX <a href="https://jvalleybootcamp.com/" target="_blank" class="font-medium hover:font-semibold hover:text-primary dark:text-third"> J Valley Bootcamp </a> tahun 2022
                     </p>
-                    <p class="font-semibold my-1 text-base text-secondary">
+                    <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
                         Used App :
                     </p>
                     <div class="my-2 flex items-center gap-5">
                         <img class="w-5" src="/assets/figma.03c60c3d.svg" alt="">
-                        <img class="w-7" src="/assets/notion.f00e80e8.svg" alt="">
+                        <!-- <img class="w-7 dark:text-third" src="" alt=""> -->
+                        <svg role="img" class="w-7 dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>Notion</title>
+                            <path
+                                d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z" />
+                        </svg>
                     </div>
                 </div>
                 <!-- project 1 end -->
@@ -163,11 +182,11 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="/assets/2.f966b3f1.jpg" alt="">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Design for Aljabar Competition</h3>
-                    <p class="font-normal text-base text-justify text-secondary">
+                    <h3 class="font-semibold text-xl text-dark dark:text-primary mt-5 mb-3">Design for Aljabar Competition</h3>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third">
                         Membuat desain banner, poster, konten media sosial, tiket, sertifikat, administrator, etc. Dalam kegiatan LKBB Aljabar Competition tahun 2022
                     </p>
-                    <p class="font-semibold my-1 text-base text-secondary">
+                    <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
                         Used App :
                     </p>
                     <div class="my-2 flex items-center gap-5">
@@ -188,21 +207,21 @@
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-12">
                     <h4 class="font-semibold text-xl uppercase text-primary mb-3">Kontak</h4>
-                    <h2 class="font-medium text-dark text-2xl mb-4">Hubungi Saya</h2>
-                    <p class="font-normal text-lg text-justify text-secondary">Jika ingin berkomunikasi lebih lanjut dengan saya atau ingin menjalin kerjasama, email dan kontak saya selalu terbuka kepada siapa saja dan kapan saja. </p>
+                    <h2 class="font-medium text-dark dark:text-third text-2xl mb-4">Hubungi Saya</h2>
+                    <p class="font-normal text-lg text-justify text-secondary dark:text-third">Jika ingin berkomunikasi lebih lanjut dengan saya atau ingin menjalin kerjasama, email dan kontak saya selalu terbuka kepada siapa saja dan kapan saja. </p>
                 </div>
             </div>
             <div class="w-full px-4 flex justify-center items-center gap-10 md:gap-8">
                 <div>
                     <a href="https://mailto:raihanudinrafif@gmail.com" target="_blank" class="flex flex-col items-center group">
                         <img src="/assets/gmail.f149d494.svg" width="40" alt="kontak via email">
-                        <p class="font-normal text-secondary hidden group-hover:font-medium md:block">raihanudinrafif@gmail.com</p>
+                        <p class="font-normal text-secondary dark:text-third hidden group-hover:font-medium md:block">raihanudinrafif@gmail.com</p>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/raihanudinrafif14/" target="_blank" class="flex flex-col items-center group">
                         <img src="/assets/linkedin.ac51ac9f.svg" width="40" alt="kontak via email">
-                        <p class="font-normal text-secondary hidden group-hover:font-medium md:block">Raihanudin Rafif</p>
+                        <p class="font-normal text-secondary dark:text-third hidden group-hover:font-medium md:block">Raihanudin Rafif</p>
                     </a>
                 </div>
             </div>
@@ -232,18 +251,18 @@
     <!-- Contyact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="bg-dark dark:bg-[#d9d9d9] pt-24 pb-12">
         <div class="container max-w-[1080px]">
             <div class="w-full mx-auto flex flex-wrap">
-                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-2/3" >
-                    <h2 class="text-4xl text-white mb-5">Raihanudin Rafif</h2>
+                <div class="w-full px-4 mb-12 text-slate-300 dark:text-dark font-medium md:w-2/3" >
+                    <h2 class="text-4xl text-white dark:text-dark mb-5">Raihanudin Rafif</h2>
                     <p class="text-lg font-thin">Gembong, Balaraja, Tangerang, Banten</p>
                     <p class="text-lg font-thin">Indonesia, 15610</p>
                     <p class="text-lg font-thin">raihanudinrafif@gmail.com</p>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-medium text-xl text-white mb-5">Tautan</h3>
-                    <ul class="text-slate-300">
+                    <h3 class="font-medium text-xl text-white dark:text-dark mb-5">Tautan</h3>
+                    <ul class="text-slate-300 dark:text-dark">
                         <li>
                             <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
                         </li>
@@ -265,7 +284,7 @@
                 <div class="flex items-center justify-center mb-5">
                     <!-- LinkedIN -->
                     <a target="_blank" href="https://wa.me/628989011101"
-                        class="w-9 h-9 mr-3 flex justify-center text-white items-center hover:text-primary">
+                        class="w-9 h-9 mr-3 flex justify-center text-white dark:text-dark dark:hover:text-primary items-center hover:text-primary">
                         <svg role="img" viewBox="0 0 24 24" width="28" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                             <title>WhatsApp</title>
                             <path
@@ -275,7 +294,7 @@
                 
                     <!-- Instagram -->
                     <a target="_blank" href="https://instagram.com/rhnrafif"
-                        class="w-9 h-9 mr-3 flex justify-center text-white items-center hover:text-primary">
+                        class="w-9 h-9 mr-3 flex justify-center text-white dark:text-dark dark:hover:text-primary items-center hover:text-primary">
                         <svg role="img" viewBox="0 0 24 24" width="28" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                             <title>Instagram</title>
                             <path
@@ -285,7 +304,7 @@
                 
                     <!-- Telegram -->
                     <a target="_blank" href="https://t.me/rhnrafif14"
-                        class="w-9 h-9 mr-3 flex justify-center text-white items-center hover:text-primary">
+                        class="w-9 h-9 mr-3 flex justify-center text-white dark:text-dark dark:hover:text-primary items-center hover:text-primary">
                         <svg role="img" viewBox="0 0 24 24" width="28" class="fill-current" xmlns="http://www.w3.org/2000/svg">
                             <title>Telegram</title>
                             <path
@@ -293,7 +312,7 @@
                         </svg>
                     </a>
                 </div>
-                <p class="font-medium text-xs text-slate-500 text-center">Dibuat oleh <a href="#home" class="font-medium text-primary"> Raihanudin Rafif </a> menggunakan 
+                <p class="font-medium text-xs text-slate-500 dark:text-dark text-center">Dibuat oleh <a href="#home" class="font-medium text-primary"> Raihanudin Rafif </a> menggunakan 
                     <a target="_blank" href="https://tailwindcss.com/"
                         class=" ml-1 hover:text-primary">
                         <svg role="img" viewBox="0 0 24 24" width="24" class="fill-current inline" xmlns="http://www.w3.org/2000/svg">
@@ -308,5 +327,6 @@
     <!-- Footer End -->
 
     <script src="/js/script.js"></script>
+    <script src="./splide/dist/js/splide.min.js"></script>
 </body>
 </html>
