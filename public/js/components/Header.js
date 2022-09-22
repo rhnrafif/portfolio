@@ -4,8 +4,8 @@ export default function Header(){
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-third">                    
         <div class="container max-w-[1080px]">
             <div class="flex items-center justify-between relative">
-                <div class="px-4 py-2">
-                   <img class="w-10 lg:w-11 select-none" src="./img/nft.png" alt="logo">
+                <div class=" px-4 py-2">
+                   <img class="w-16 select-none" src="./img/nft.png" alt="logo">
                 </div>
 
                 <!-- button dark mode start -->
