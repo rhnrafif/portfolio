@@ -38,7 +38,7 @@
 
     </section>
     <!-- About Section End -->
-    `}function c(){return`
+    `}function m(){return`
     <!-- Congtact Section Start -->
     <section id="contact" class="pt-24 pb-32">
         <div class="container max-w-[1080px]">
@@ -87,7 +87,7 @@
         </div>
     </section>
     <!-- Contyact Section End -->
-    `}function m(){return`
+    `}function c(){return`
 <!-- Footer Start -->
     <footer class="bg-dark dark:bg-[#d9d9d9] pt-24 pb-12">
         <div class="container max-w-[1080px]">
@@ -163,7 +163,7 @@
         </div>
     </footer>
     <!-- Footer End -->
-`}function p(){return`
+`}function g(){return`
     <!-- Header Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-third">                    
         <div class="container max-w-[1080px]">
@@ -210,7 +210,7 @@
         </div>
     </header>
     <!-- header End -->
-    `}function g(){return`
+    `}function p(){return`
     <!-- Hero Section Start -->
     <section id="home" class="pt-28 lg:pt-36">
         <div class="container max-w-[1080px]">
@@ -227,9 +227,9 @@
                 </div>
                 <div class="w-full self-end mt-20 px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-0 lg:right-0">
-                        <img src="img/hero.png" alt="hero" class="max-w-[200px] mx-auto select-none">
+                        <img src="img/me4.png" alt="hero" class="max-w-[200px] mx-auto select-none ">
                         <span class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
-                            <svg width="250" height="250" class="fill-[#00A7EB] dark:fill-third" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="250" height="250" class="fill-[#00A7EB] dark:fill[#00A7EB]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill=""
                                     d="M48.3,-41.4C63.9,-32.6,79,-16.3,80.1,1.2C81.3,18.6,68.5,37.2,52.9,49.8C37.2,62.4,18.6,69,-0.2,69.2C-18.9,69.3,-37.8,63,-45.7,50.4C-53.6,37.8,-50.4,18.9,-52.2,-1.8C-54,-22.4,-60.7,-44.9,-52.8,-53.7C-44.9,-62.5,-22.4,-57.6,-3.1,-54.5C16.3,-51.4,32.6,-50.2,48.3,-41.4Z"
                                     transform="translate(100 100) scale(1.1)" />
@@ -241,7 +241,7 @@
         </div>
     </section>
     <!-- Hero Section End -->
-    `}function u(){return`
+    `}function x(){return`
     <!-- Portfolio Start -->
     <section id="portfolio" class="pt-24 pb-16 bg-secondary dark:bg-dark bg-opacity-20">
         <div class="container max-w-[1080px]">
@@ -267,7 +267,7 @@
                     <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
                         Used App :
                     </p>
-                    <div class="my-2 flex items-center gap-5">
+                    <div class="my-2 flex items-center gap-5 ">
                         <img class="w-5" src="./img/logo/figma.svg" alt="">
                         <!-- <img class="w-7 dark:text-third" src="" alt=""> -->
                         <svg role="img" class="w-7 dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -316,19 +316,43 @@
                     <div class="my-2 flex items-center gap-5">
                         <img class="w-5" src="./img/logo/figma.svg" alt="">
                         <img class="w-8" src="./img/logo/vitejs.svg" alt="">
+                        <img class="w-8" src="./img/logo/js.svg" alt="">
+                        <img class="w-9" src="./img/logo/tailwind.svg" alt="">
                     </div>
                 </div>
                 <!-- project 3 end -->
+                <!-- project 4 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="relative rounded-md shadow-md overflow-hidden flex flex-wrap justify-start w-full max-h-[260px] ">
+                        <a href="https://app-vote-kristal.vercel.app" target="_blank">
+                            <img src="img/portfolio/4.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark dark:text-primary mt-5 mb-3">Live Vote App</h3>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third">
+                        Website untuk mempermudah proses perhitungan nilai dalam KRISTAL Scout Competition Tahun 2022
+                    </p>
+                    <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
+                        Used App :
+                    </p>
+                    <div class="my-2 flex items-center gap-5">
+                        <img class="w-8 bg-dark" src="./img/logo/react1.svg" alt="">
+                        <img class="w-8" src="./img/logo/vitejs.svg" alt="">
+                        <img class="w-7" src="./img/logo/firebase.svg" alt="">
+                        <img class="w-9" src="./img/logo/tailwind.svg" alt="">
+                    </div>
+                </div>
+                <!-- project 4 end -->
 
             </div>
         </div>
     </section>
     <!-- Portfolio End -->
-    `}function x(){return`
-    ${p()}
+    `}function u(){return`
     ${g()}
+    ${p()}
     ${d()}
-    ${u()}
-    ${c()}
+    ${x()}
     ${m()}
-`}const f=document.getElementById("app");f.innerHTML=x();o();
+    ${c()}
+`}const f=document.getElementById("app");f.innerHTML=u();o();

@@ -16,9 +16,9 @@ export default function Hero(){
                 </div>
                 <div class="w-full self-end mt-20 px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-0 lg:right-0">
-                        <img src="img/hero.png" alt="hero" class="max-w-[200px] mx-auto select-none">
+                        <img src="img/me4.png" alt="hero" class="max-w-[200px] mx-auto select-none ">
                         <span class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125">
-                            <svg width="250" height="250" class="fill-[#00A7EB] dark:fill-third" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="250" height="250" class="fill-[#00A7EB] dark:fill[#00A7EB]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill=""
                                     d="M48.3,-41.4C63.9,-32.6,79,-16.3,80.1,1.2C81.3,18.6,68.5,37.2,52.9,49.8C37.2,62.4,18.6,69,-0.2,69.2C-18.9,69.3,-37.8,63,-45.7,50.4C-53.6,37.8,-50.4,18.9,-52.2,-1.8C-54,-22.4,-60.7,-44.9,-52.8,-53.7C-44.9,-62.5,-22.4,-57.6,-3.1,-54.5C16.3,-51.4,32.6,-50.2,48.3,-41.4Z"
                                     transform="translate(100 100) scale(1.1)" />

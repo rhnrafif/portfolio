@@ -25,7 +25,7 @@ export default function Portfolio (){
                     <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
                         Used App :
                     </p>
-                    <div class="my-2 flex items-center gap-5">
+                    <div class="my-2 flex items-center gap-5 ">
                         <img class="w-5" src="./img/logo/figma.svg" alt="">
                         <!-- <img class="w-7 dark:text-third" src="" alt=""> -->
                         <svg role="img" class="w-7 dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -74,9 +74,33 @@ export default function Portfolio (){
                     <div class="my-2 flex items-center gap-5">
                         <img class="w-5" src="./img/logo/figma.svg" alt="">
                         <img class="w-8" src="./img/logo/vitejs.svg" alt="">
+                        <img class="w-8" src="./img/logo/js.svg" alt="">
+                        <img class="w-9" src="./img/logo/tailwind.svg" alt="">
                     </div>
                 </div>
                 <!-- project 3 end -->
+                <!-- project 4 start -->
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="relative rounded-md shadow-md overflow-hidden flex flex-wrap justify-start w-full max-h-[260px] ">
+                        <a href="https://app-vote-kristal.vercel.app" target="_blank">
+                            <img src="img/portfolio/4.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark dark:text-primary mt-5 mb-3">Live Vote App</h3>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third">
+                        Website untuk mempermudah proses perhitungan nilai dalam KRISTAL Scout Competition Tahun 2022
+                    </p>
+                    <p class="font-semibold my-1 text-base text-secondary dark:text-primary">
+                        Used App :
+                    </p>
+                    <div class="my-2 flex items-center gap-5">
+                        <img class="w-8 bg-dark" src="./img/logo/react1.svg" alt="">
+                        <img class="w-8" src="./img/logo/vitejs.svg" alt="">
+                        <img class="w-7" src="./img/logo/firebase.svg" alt="">
+                        <img class="w-9" src="./img/logo/tailwind.svg" alt="">
+                    </div>
+                </div>
+                <!-- project 4 end -->
 
             </div>
         </div>
