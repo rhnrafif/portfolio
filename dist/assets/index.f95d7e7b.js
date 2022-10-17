@@ -6,7 +6,7 @@
                 <div class="w-full px-5 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
                     <h2 class="font-medium text-dark dark:text-third text-2xl max-w-md lg:text-3xl">Siapa saya sebenarnya ?</h2>
-                    <p class="font-normal text-base text-justify text-secondary dark:text-third max-w-xl lg:text-base py-3">Saya berasal dari Tangerang, Indonesia. Seorang lulusan SMA IPA yang identik dengan Sains dan Teknologi namun lebih memilih Teknologi sebagai bidang dalam lanjutan pendidikan ditingkat sarjana, ya. Saat ini saya berkuliah di Universitas Terbuka program studi Informasi.</p>
+                    <p class="font-normal text-base text-justify text-secondary dark:text-third max-w-xl lg:text-base py-3">Saya berasal dari Tangerang, Indonesia. Seorang lulusan SMA IPA yang identik dengan Sains dan Teknologi namun lebih memilih Teknologi sebagai bidang dalam lanjutan pendidikan ditingkat sarjana. Ya, saat ini saya berkuliah di Universitas Terbuka program studi Sistem Informasi.</p>
                     <p class="font-normal text-base text-justify text-secondary dark:text-third max-w-xl lg:text-base ">Saya mengawali hobi dibidang Desain Grafis sejak tahun 2018. Mulai tertarik dan mendalami secara intensif dunia pemrograman sejak Januari 2022 melalui sebuah komunitas Fullstack Programmer aktif hingga saat ini. Saya sangat terbuka untuk kesempatan apapun khususnya dalam IT Development. </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
